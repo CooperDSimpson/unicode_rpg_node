@@ -1,0 +1,114 @@
+﻿Foyer
+PLAYER_INVENTORY
+
+ROOMS
+Attic$A dusty attic filled with old trunks, cobwebs, and forgotten memories.
+ITEMS
+END_ITEMS
+Ballroom$A vast room with a shining floor, an empty stage, and a grand chandelier.
+ITEMS
+END_ITEMS
+Basement$A dark, damp basement with a lingering musty smell.
+ITEMS
+END_ITEMS
+Bathroom$A marble-tiled bathroom with a large bathtub and golden faucets.
+ITEMS
+END_ITEMS
+Conservatory$A glass-domed room filled with exotic plants and the scent of fresh flowers.
+ITEMS
+END_ITEMS
+Dining Room$An opulent room with a long table set with silverware and a grand fireplace.
+ITEMS
+END_ITEMS
+Foyer$A grand entrance with a large chandelier and a red carpet leading inward.
+ITEMS
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+bingus$bongus
+END_ITEMS
+Garage$A dusty garage housing vintage cars covered in white sheets.
+ITEMS
+END_ITEMS
+Garden$A lush garden with overgrown ivy and a central stone fountain.
+ITEMS
+END_ITEMS
+Guest Room$A well-decorated room with a neatly made bed and a nightstand.
+ITEMS
+END_ITEMS
+Hidden Chamber$A mysterious chamber filled with ancient artifacts and cryptic symbols on the walls.
+ITEMS
+END_ITEMS
+Kitchen$A well-stocked kitchen with polished counters and the scent of old spices.
+ITEMS
+END_ITEMS
+Library$Shelves packed with ancient books and a cozy reading nook by the fireplace.
+ITEMS
+END_ITEMS
+Main Hall$A vast hall with a grand staircase and doors leading to various rooms.
+ITEMS
+END_ITEMS
+Master Bedroom$A lavishly furnished bedroom with an enormous four-poster bed and a balcony view.
+ITEMS
+END_ITEMS
+Secret Passage$A narrow, dimly lit tunnel hidden behind a bookshelf.
+ITEMS
+END_ITEMS
+Servant's Quarters$A modest living space with simple beds and an old wooden table.
+ITEMS
+END_ITEMS
+Study$A dark wooden study filled with dusty tomes and an old writing desk.
+ITEMS
+END_ITEMS
+Wine Cellar$A chilly cellar lined with racks of expensive wines, some covered in dust.
+ITEMS
+END_ITEMS
+
+CONNECTIONS
+Attic%down%Master Bedroom
+Ballroom%east%Conservatory
+Ballroom%north%Garden
+Ballroom%south%Main Hall
+Basement%east%Wine Cellar
+Basement%up%Foyer
+Basement%west%Servant's Quarters
+Bathroom%south%Master Bedroom
+Conservatory%west%Ballroom
+Dining Room%north%Kitchen
+Dining Room%west%Main Hall
+Foyer%down%Basement
+Foyer%north%Main Hall
+Garage%west%Garden
+Garden%east%Garage
+Garden%south%Ballroom
+Guest Room%down%Main Hall
+Guest Room%east%Master Bedroom
+Hidden Chamber%west%Secret Passage
+Kitchen%south%Dining Room
+Library%east%Main Hall
+Library%north%Study
+Main Hall%east%Dining Room
+Main Hall%north%Ballroom
+Main Hall%south%Foyer
+Main Hall%up%Guest Room
+Main Hall%west%Library
+Master Bedroom%north%Bathroom
+Master Bedroom%up%Attic
+Master Bedroom%west%Guest Room
+Secret Passage%east%Hidden Chamber
+Secret Passage%south%Servant's Quarters
+Servant's Quarters%east%Basement
+Servant's Quarters%north%Secret Passage
+Study%south%Library
+Wine Cellar%west%Basement
