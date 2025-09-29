@@ -1,4 +1,4 @@
-﻿#include <Windows.h>
+﻿#include <windows.h>
 #include <chrono>
 #include <codecvt>
 #include <cstdlib>
@@ -8,6 +8,7 @@
 #include <io.h>
 #include <iostream>
 #include <locale>
+#include <memory>
 #include <map>
 #include <stdio.h>
 #include <stdlib.h>
@@ -49,8 +50,8 @@ std::wstring utf8_to_wstring(const std::string &utf8_str) {
 std::wstring read_file_as_wstring(const std::string &filename) {
   std::ifstream file(filename, std::ios::binary);
   if (!file) {
-    std::wcerr << L"Error opening file! Make sure '" << filename.c_str()
-               << L"' exists.\n";
+    std::wcerr << "Error opening file! Make sure '" << filename.c_str()
+               << "' exists.\n";
     return L"";
   }
 
@@ -60,7 +61,7 @@ std::wstring read_file_as_wstring(const std::string &filename) {
   file.close();
 
   if (content.empty()) {
-    std::wcerr << L"Error: File read resulted in an empty string.\n";
+    std::wcerr << "Error: File read resulted in an empty string.\n";
     return L"";
   }
 
@@ -205,6 +206,8 @@ public:
   }
 };
 
+
+/*
 World build() {
   World mansion;
   mansion.addRoom(L"Foyer");
@@ -317,7 +320,7 @@ World build() {
   mansion.setStartingRoom(L"Foyer");
   return mansion;
 }
-
+*/
 void saveWorldToFile(const World &world, const std::string &filename) {
   // Check if current room exists
   if (!world.currentRoom) {
@@ -632,7 +635,7 @@ title_screen:
       std::wcout << world.currentRoom->description << L"\n\n";
       UIPT = utils::toUpperCase(utils::getString(L"> "));
       if (UIPT.substr(0, 3) == L"GO ") {
-        PlaySound(L"whoosh-6316.wav", NULL, SND_FILENAME | SND_ASYNC);
+        PlaySound("whoosh-6316.wav", NULL, SND_FILENAME | SND_ASYNC);
         world.move(utils::toLowerCase(UIPT).substr(3));
       }
       if (UIPT == L"LOOK") {

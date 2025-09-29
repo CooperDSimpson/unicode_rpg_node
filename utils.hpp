@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <string>
 #include <thread>
+#include <sstream>
 #include <type_traits>
 #include <vector>
 #include <wchar.h>
@@ -38,7 +39,7 @@ template <typename T>
 T getNumber(std::wstring prompt = L"", T max = 10, T min = 1,
             std::wstring reprompt = L"") {
   static_assert(std::is_arithmetic<T>::value,
-                L"T must be an arithmetic type (int, float, or double)");
+                "T must be an arithmetic type (int, float, or double)");
 
   T option = -1;
   std::wstring UIPT;
