@@ -119,5 +119,6 @@ std::wstring oppositeDirection(std::wstring direction) {
   } else if (direction == L"outside") {
     return L"inside";
   }
+  return L"unknown";
 }
 } // namespace utils

@@ -16,7 +16,6 @@
 #include <thread>
 #include <wchar.h>
 
-#pragma comment(lib, "winmm.lib")
 
 // headers
 #include "utils.hpp"
